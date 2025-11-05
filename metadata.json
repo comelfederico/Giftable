@@ -1,0 +1,5 @@
+{
+  "name": "Giftable Wishlist Modeler",
+  "description": "An application to visualize and interact with the data model for Giftable, a wishlist app. It allows users to view wishlists, see ranked items, and apply filters to find the perfect gift.",
+  "requestFramePermissions": []
+}

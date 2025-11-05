@@ -1,0 +1,143 @@
+
+import { User, Wishlist, Item, Category, Occasion, Visibility } from '../types';
+
+export const mockUser: User = {
+  userId: 'user-1',
+  username: 'sarahday',
+  email: 'sarah.day@example.com',
+  profile: {
+    firstName: 'Sarah',
+    lastName: 'Day',
+    birthDate: '1995-08-15',
+  },
+};
+
+export const mockWishlists: Wishlist[] = [
+  {
+    wishlistId: 'wishlist-1',
+    ownerId: 'user-1',
+    title: 'Birthday 2024',
+    visibility: Visibility.Public,
+  },
+  {
+    wishlistId: 'wishlist-2',
+    ownerId: 'user-1',
+    title: 'Housewarming Party',
+    visibility: Visibility.FriendsOnly,
+  },
+];
+
+export const mockItems: Item[] = [
+  // Items for Birthday 2024
+  {
+    itemId: 'item-1',
+    wishlistId: 'wishlist-1',
+    itemName: 'Sony WH-1000XM5 Headphones',
+    description: 'Industry leading noise canceling headphones with a new design.',
+    purchaseLink: '#',
+    estimatedPrice: 399,
+    category: Category.Tech,
+    occasion: Occasion.Birthday,
+    rating: 10,
+  },
+  {
+    itemId: 'item-2',
+    wishlistId: 'wishlist-1',
+    itemName: '"Project Hail Mary" by Andy Weir (Hardcover)',
+    description: 'A thrilling science fiction novel from the author of "The Martian".',
+    purchaseLink: '#',
+    estimatedPrice: 22,
+    category: Category.Books,
+    occasion: Occasion.Birthday,
+    rating: 9,
+  },
+  {
+    itemId: 'item-3',
+    wishlistId: 'wishlist-1',
+    itemName: 'Weekend Pottery Class',
+    description: 'A two-day introductory course to learn the basics of pottery.',
+    purchaseLink: '#',
+    estimatedPrice: 150,
+    category: Category.Experiences,
+    occasion: Occasion.Birthday,
+    rating: 8,
+  },
+  {
+    itemId: 'item-4',
+    wishlistId: 'wishlist-1',
+    itemName: 'Nintendo Switch OLED',
+    description: 'The latest Switch model with a vibrant 7-inch OLED screen.',
+    purchaseLink: '#',
+    estimatedPrice: 349,
+    category: Category.Games,
+    occasion: Occasion.JustBecause,
+    rating: 9,
+  },
+   {
+    itemId: 'item-5',
+    wishlistId: 'wishlist-1',
+    itemName: 'All-Birds Wool Runners',
+    purchaseLink: '#',
+    estimatedPrice: 95,
+    category: Category.Fashion,
+    occasion: Occasion.Birthday,
+    rating: 7,
+  },
+
+  // Items for Housewarming
+  {
+    itemId: 'item-6',
+    wishlistId: 'wishlist-2',
+    itemName: 'Le Creuset Dutch Oven',
+    description: '5.5 quart in Cerise. A kitchen classic for stews, roasts, and more.',
+    purchaseLink: '#',
+    estimatedPrice: 420,
+    category: Category.HomeGoods,
+    occasion: Occasion.Housewarming,
+    rating: 10,
+  },
+  {
+    itemId: 'item-7',
+    wishlistId: 'wishlist-2',
+    itemName: 'Set of 4 Abstract Art Prints',
+    description: 'Minimalist geometric designs to decorate the new living room.',
+    purchaseLink: '#',
+    estimatedPrice: 85,
+    category: Category.Art,
+    occasion: Occasion.Housewarming,
+    rating: 8,
+  },
+  {
+    itemId: 'item-8',
+    wishlistId: 'wishlist-2',
+    itemName: 'Smart Garden 3',
+    description: 'An indoor garden for growing fresh herbs and vegetables.',
+    purchaseLink: '#',
+    estimatedPrice: 99,
+    category: Category.HomeGoods,
+    occasion: Occasion.Housewarming,
+    rating: 9,
+  },
+  {
+    itemId: 'item-9',
+    wishlistId: 'wishlist-2',
+    itemName: 'Board Game: Wingspan',
+    description: 'A competitive, medium-weight, card-driven, engine-building board game.',
+    purchaseLink: '#',
+    estimatedPrice: 48,
+    category: Category.Games,
+    occasion: Occasion.Housewarming,
+    rating: 7,
+  },
+   {
+    itemId: 'item-10',
+    wishlistId: 'wishlist-2',
+    itemName: 'Subscription to Coffee Roasters',
+    description: 'Monthly delivery of whole bean coffee from around the world.',
+    purchaseLink: '#',
+    estimatedPrice: 60,
+    category: Category.Experiences,
+    occasion: Occasion.Housewarming,
+    rating: 9,
+  },
+];
